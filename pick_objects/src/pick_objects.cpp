@@ -29,8 +29,8 @@ int main(int argc, char** argv){
  
 
   // Define a position and orientation for the robot to reach
-  goal.target_pose.pose.position.x = 1.0;
-   goal.target_pose.pose.position.y = 1.0;
+  goal.target_pose.pose.position.x = -4.0;
+  goal.target_pose.pose.position.y = 6.0;
   goal.target_pose.pose.orientation.w = 1.0;
   
  
@@ -48,8 +48,8 @@ int main(int argc, char** argv){
     ROS_INFO("Hooray, the base moved 1 meter forward");
     ROS_INFO("Picking up object");
   	//sleep(5);
-    ros::Duration(5.0).sleep(); 
-    goal.target_pose.pose.position.x = 3.0;
+    //ros::Duration(1.0).sleep(); 
+    goal.target_pose.pose.position.x = -4.0;
      goal.target_pose.pose.position.y = 3.0;
     goal.target_pose.pose.orientation.w = 1.0;
   
